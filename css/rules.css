@@ -1,0 +1,157 @@
+                                        * {
+                                            -webkit-box-sizing: border-box;
+                                            -moz-box-sizing: border-box;
+                                            box-sizing: border-box;
+                                            font-family: 'Cairo', sans-serif;
+                                        }
+                                        
+                                        p {
+                                            color: rgba(255, 255, 255, 1);
+                                            font-size: 22px;
+                                            background: rgba(63, 61, 61, 0.503);
+                                        }
+                                        
+                                        h3 {
+                                            color: white;
+                                            text-align: right;
+                                            margin-right: 15px;
+                                        }
+                                        
+                                        body {
+                                            padding: 0;
+                                            margin: 0;
+                                            background: url(../imgs/background.jpg);
+                                            background-size: cover;
+                                            background-attachment: fixed;
+                                            display: flex;
+                                            flex-direction: column;
+                                        }
+                                        
+                                        header {
+                                            width: 100%;
+                                            height: 80px;
+                                            background-color: rgb(6, 11, 56);
+                                            border-bottom: 3px solid #b10909;
+                                        }
+                                        
+                                        #logo {
+                                            float: right;
+                                            height: 80%;
+                                            width: 120px;
+                                            margin-right: 5px;
+                                            margin-top: 7PX;
+                                        }
+                                        
+                                        #h2head {
+                                            line-height: 94%;
+                                            text-align: center;
+                                            float: right;
+                                            padding: 0 15px;
+                                            color: white;
+                                            height: 30px;
+                                            font-size: 15px;
+                                            margin-bottom: 10px;
+                                        }
+                                        
+                                        #pic {
+                                            float: left;
+                                            height: 90%;
+                                            width: 500px
+                                        }
+                                        
+                                        nav {
+                                            width: 100%;
+                                            height: 59px;
+                                            background-color: rgba(6, 11, 56, 0.794);
+                                            border-bottom: 3px solid #b10909;
+                                        }
+                                        
+                                        nav ul {
+                                            list-style: none;
+                                            float: right;
+                                            height: 30px;
+                                            display: flex;
+                                            text-align: center;
+                                            margin-right: 50px;
+                                            margin-top: 0px;
+                                            margin-bottom: 5px
+                                        }
+                                        
+                                        li {
+                                            width: 50px;
+                                            height: 30px;
+                                            margin-right: 20px;
+                                        }
+                                        
+                                        nav ul li a {
+                                            text-decoration: none;
+                                            color: white;
+                                            font-size: 14px;
+                                            margin-bottom: 5px
+                                        }
+                                        
+                                        #nav {
+                                            display: flex;
+                                            text-align: center;
+                                            align-items: flex-end;
+                                            width: 10px;
+                                            height: 10px;
+                                        }
+                                        
+                                        #up {
+                                            height: 15px;
+                                            width: 30px;
+                                            margin-right: 8px;
+                                        }
+                                        
+                                        section {
+                                            background: rgba(255, 255, 255, 1);
+                                            height: 730px;
+                                        }
+                                        
+                                        footer {
+                                            position: fixed;
+                                            bottom: 0;
+                                            width: 100%;
+                                            background-color: rgba(6, 11, 56, 0.822);
+                                            color: rgb(163, 163, 163);
+                                            text-align: right;
+                                            border-top: 1px solid #b10909;
+                                            height: 80px;
+                                        }
+                                        
+                                        #low {
+                                            list-style: none;
+                                            float: left;
+                                            height: 50px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            flex-direction: row-reverse;
+                                            width: 150px;
+                                            text-align: center;
+                                            padding-bottom: 10px;
+                                        }
+                                        
+                                        #down {
+                                            display: flex;
+                                            text-align: center;
+                                            align-items: flex-end;
+                                            margin: 0px 10px 0px 0px;
+                                            padding-left: 8px;
+                                            height: 32px;
+                                            width: 40px;
+                                        }
+                                        
+                                        #pan {
+                                            margin-bottom: 60px;
+                                        }
+                                        
+                                        #copy {
+                                            width: 20%;
+                                            border: 0px;
+                                            float: right;
+                                            height: 50px;
+                                            margin-bottom: 20px;
+                                            margin-right: 10px;
+                                        }

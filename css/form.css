@@ -1,0 +1,262 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    margin: 0;
+    /*  display: grid;*/
+    place-items: center;
+    min-height: 100vh;
+    background: url(../imgs/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(6, 11, 56);
+    border-bottom: 3px solid #b10909;
+    margin: 0;
+}
+
+img {
+    float: right;
+    height: 80%;
+    width: 120px;
+    margin-right: 5px;
+    margin-top: 7PX;
+}
+
+#h2head {
+    line-height: 94%;
+    text-align: center;
+    float: right;
+    padding: 0 15px;
+    color: white;
+    height: 30px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+#pic {
+    float: left;
+    height: 90%;
+    width: 500px
+}
+
+nav {
+    width: 100%;
+    height: 59px;
+    background-color: rgba(6, 11, 56, 0.794);
+    border-bottom: 3px solid #b10909;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    height: 30px;
+    display: flex;
+    text-align: center;
+    margin-right: 50px;
+    margin-top: 0px;
+    margin-bottom: 5px
+}
+
+li {
+    width: 50px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 5px
+}
+
+#nav {
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+    width: 10px;
+    height: 10px;
+}
+
+#up {
+    height: 25px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+h1,
+p {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    background: rgb(0, 0, 0, .5);
+}
+
+root {
+    --primary-color: rgb(11, 78, 179);
+}
+
+
+/* Global Stylings */
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: white;
+    text-align: right;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+h3 {
+    color: white;
+    text-align: right;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* Progressbar */
+
+.progressbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    counter-reset: step;
+    margin: 2rem 0 4rem;
+}
+
+.progressbar::before,
+.progress {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: #dcdcdc;
+    z-index: -1;
+}
+
+.progress {
+    background-color: var(--primary-color);
+    width: 0%;
+    transition: 0.3s;
+}
+
+.progress-step {
+    width: 2.1875rem;
+    height: 2.1875rem;
+    background-color: #073cae;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-step::before {
+    counter-increment: step;
+    content: counter(step);
+    color: white;
+}
+
+.progress-step::after {
+    content: attr(data-title);
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    font-size: .99rem;
+    color: rgb(172, 172, 174);
+}
+
+.progress-step-active {
+    background-color: var(--primary-color);
+    color: #f3f3f3;
+}
+
+
+/* Form */
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 0.35rem;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.665);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.form-step {
+    display: none;
+    transform-origin: top;
+    animation: animate 0.5s;
+}
+
+.form-step-active {
+    display: block;
+}
+
+.input-group {
+    margin: 2rem 0;
+}
+
+@keyframes animate {
+    from {
+        transform: scale(1, 0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+
+
+/* Button */
+
+.btns-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.btn {
+    padding: 0.75rem;
+    display: block;
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border-radius: 2.25rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 0 2px rgb(5, 35, 204), 0 0 0 3px var(--primary-color);
+}

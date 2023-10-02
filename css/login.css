@@ -1,0 +1,184 @@
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        body {
+            padding: 0;
+            margin: 0;
+            background: url(../imgs/background.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        header {
+            width: 100%;
+            height: 130px;
+            background-color: rgb(6, 11, 56);
+            border-bottom: 5px solid #b10909;
+        }
+        
+        img {
+            float: right;
+            height: 99%;
+            width: 200px;
+        }
+        
+        #h2head {
+            line-height: 150%;
+            text-align: center;
+            float: right;
+            padding: 0 30px;
+            color: white;
+            height: 65px;
+            font-size: 20px;
+        }
+        
+        #pic {
+            float: left;
+            height: 99%;
+            width: 500px
+        }
+        
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 450px;
+            background: rgb(0, 0, 0, .5);
+            border-radius: 10px;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+            height: 420px;
+        }
+        
+        .center h1 {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid silver;
+            color: white;
+        }
+        
+        .center form {
+            padding: 0 40px;
+            box-sizing: border-box;
+        }
+        
+        form .txt_field {
+            position: relative;
+            border-bottom: 2px solid #adadad;
+            margin: 30px 0;
+        }
+        
+        .txt_field input {
+            width: 100%;
+            padding: 0 5px;
+            height: 40px;
+            font-size: 20px;
+            border: white;
+            background: none;
+            outline: white;
+            color:white;
+        }
+        
+        .txt_field label {
+            position: absolute;
+            top: 50%;
+            right: 5px;
+            color: #ffffff;
+            transform: translateY(-50%);
+            font-size: 20px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        
+        .txt_field span::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: #2691d9;
+            transition: .5s;
+        }
+        
+        .txt_field input:focus~label,
+        .txt_field input:valid~label {
+            top: -5px;
+            color: #2691d9;
+        }
+        
+        .txt_field input:focus~span::before,
+        .txt_field input:valid~span::before {
+            width: 100%;
+        }
+        
+        input[type="submit"] {
+            top: 90px;
+            left: 90px;
+            position: absolute;
+            width: 50%;
+            height: 50px;
+            border: 0px solid;
+            background: #2691d9;
+            border-radius: 25px;
+            font-size: 18px;
+            color: #e9f4fb;
+            font-weight: 550;
+            cursor: pointer;
+            outline: none;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        input[type="submit"]:hover {
+            border-color: #2691d9;
+            transition: .5s;
+        }
+        
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100vw;
+            background-color: rgb(6, 11, 56, .5);
+            color: rgb(163, 163, 163);
+            text-align: right;
+            border-top: 5px solid #b10909;
+        }
+        
+        #copy {
+            width: 20%;
+            padding-right: 10px;
+            border: 0px;
+            float: right;
+        }
+        
+        ul {
+            list-style: none;
+            float: left;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row-reverse;
+            width: 150px;
+            text-align: center;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+        }
+        
+        #down {
+            display: flex;
+            text-align: center;
+            align-items: flex-end;
+            width: 50px;
+            height: 50p;
+            margin: 0px 10px 0px 0px;
+            padding-left: 8px;
+        }

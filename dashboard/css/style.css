@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+    background: url(css/g);
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(6, 11, 56);
+    border-bottom: 3px solid #b10909;
+    margin: 0;
+}
+
+img {
+    float: right;
+    height: 80%;
+    width: 120px;
+    margin-right: 5px;
+    margin-top: 7PX;
+}
+
+#h2head {
+    line-height: 94%;
+    text-align: center;
+    float: right;
+    padding: 0 15px;
+    color: white;
+    height: 30px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+#pic {
+    float: left;
+    height: 90%;
+    width: 500px
+}
+
+.side {
+    background-color: rgb(6, 11, 56);
+    width: 15vw;
+    height: 100vh;
+    top: 9.5vh;
+    z-index: 1;
+    float: right;
+}
+
+.side h2 {
+    display: block;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+    color: white;
+    border-bottom: 3px solid #524c4c;
+    ;
+}
+
+.tabs {
+    list-style: none;
+    margin-top: 10vh;
+    height: 50vh;
+}
+
+.tabs li {
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    height: 9vh;
+    width: 10vw;
+    float: right;
+    margin-right: 30px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabs li:hover {
+    background-color: rgba(6, 43, 255, 0.542);
+}
+
+.tabs li.active {
+    background-color: rgba(9, 9, 19, 0.474);
+}
+
+.content {
+    width: 83.5vw;
+    top: 15vh;
+    margin-top: 1px;
+    height: 100vh;
+}
+
+.content>div {
+    padding: 20px;
+}
+
+.content>div:not(:first-child) {
+    display: none;
+}
